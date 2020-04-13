@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Создание узлов. Добавление узлов</title>
+      <meta charset="utf-8" />
+   </head>
+   <body>
+      <form>
+         Имя: <input type="text" name="name" /><br />
+         Возраст: <input type="text" name="age" /><br />
+      </form>
+      <script>
+         // Ваш код
+		let newBut = document.createElement("button");
+		newBut.type = "submit";
+		newBut.innerHTML = "Submit";
+		let parentElem = document.forms[0];
+		parentElem.appendChild(newBut);
+      </script>
+   </body>
+</html>

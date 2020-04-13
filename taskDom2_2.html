@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Поиск узлов</title>
+      <meta charset="utf-8" />
+   </head>
+   <body>
+      <form name="search">
+         <label>Поиск по сайту: <input type="text" name="search" /></label>
+         <input type="submit" value="Искать!" />
+      </form>
+      <hr />
+      <form name="search-person">
+         Поиск по посетителям:
+         <table id="age-table">
+            <tr>
+               <td>Возраст:</td>
+               <td id="age-list">
+                  <label><input type="radio" name="age" value="young" />до 18</label>
+                  <label><input type="radio" name="age" value="mature" />18-50</label>
+                  <label><input type="radio" name="age" value="senior" />более 50</label>
+            </td>
+            </tr>
+            <tr>
+               <td>Дополнительно:</td>
+               <td>
+                  <input type="text" name="info[0]" />
+                  <input type="text" name="info[1]" />
+                  <input type="text" name="info[2]" />
+               </td>
+            </tr>
+         </table>
+         <input type="submit" value="Искать!" />
+      </form>
+      <script>
+         // Ваш код
+		let lab = document.getElementById("age-list").getElementsByTagName("label");
+		let age = document.getElementById("age-table").rows[0].cells[0];
+			
+		let form = document.forms[1];
+		let form2 = document.forms.search;
+		let inp = document.forms.search.getElementsByTagName("input");
+		let info1 = document.getElementsByName("info[0]");
+		let info2 = document.getElementsByName("info[0]");
+				
+		console.log(lab, age, form, form2, inp, info1, info2);
+      </script>
+   </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Навигация в DOM</title>
+      <meta charset="utf-8" />
+   </head>
+   <body>
+      <form name="authForm">
+         Логин:<br />
+         <input type="text" name="log" /><br />
+         Пароль:<br />
+         <input type="text" name="pass" /><br />
+         <button name="signIn">Войти</button>
+      </form>
+      <script>
+         // Ваш код
+		 let form = document.forms.authForm;
+		 let formN = document.forms[0];
+		 let formInp = document.forms[0].elements[0];
+		 let but = document.forms[0].elements.signIn;
+		
+		console.log(form);	
+		console.log(formN);	
+		console.log(formInp);	
+		console.log(but);	
+		 
+		 
+      </script>
+   </body>
+</html>
+
